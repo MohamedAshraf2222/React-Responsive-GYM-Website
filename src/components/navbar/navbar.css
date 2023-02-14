@@ -1,0 +1,173 @@
+.gym__navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 70px;
+}
+.gym__navbar-logo {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+.gym__navbar-img {
+  background: var(--bg-gradient);
+  border-radius: 5px;
+  width: 35px;
+  height: 35px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gym__navbar-logo img {
+  width: 100%;
+}
+.gym__navbar-logo h3 {
+  color: var(--heading-color);
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+.gym__navbar-links ul {
+  display: flex;
+  align-items: center;
+  column-gap: 2.7rem;
+}
+.gym__navbar-links ul li {
+  color: var(--heading-color);
+  font-weight: 600;
+  transition: 0.3s;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.gym__navbar-links ul li:hover {
+  color: var(--primary-color);
+}
+
+.register-btn {
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 5px;
+  font-family: var(--font-name);
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 10px 20px;
+}
+.sticky-navbar {
+  z-index: 100;
+  top: 0;
+  left: 0;
+  position: sticky;
+  width: 100%;
+  background: #fff;
+}
+.gym__navbar-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.togglemenu {
+  display: none;
+  position: relative;
+}
+.togglemenu-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  color: #fff;
+  background: var(--primary-color);
+  top: 60px;
+  right: 0px;
+  padding: 20px 30px;
+  border-radius: 5px;
+  z-index: 99;
+}
+.togglemenu-content .register-btn {
+  display: none;
+  background-color: var(--heading-color);
+  margin-top: 0.7rem;
+  padding: 8px 15px;
+}
+.togglemenu-content ul {
+  line-height: 28px;
+}
+.togglemenu-content ul li:hover {
+  color: var(--heading-color);
+}
+
+.scale-up-center {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
+    both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .togglemenu {
+    display: flex;
+    flex-direction: column;
+  }
+  .gym__navbar-links {
+    display: none;
+  }
+  .gym__navbar {
+    justify-content: space-between;
+    padding: 0 100px;
+  }
+}
+/* @media screen and (max-width: 750px) {
+  .gym__navbar {
+    padding: 0 100px;
+  }
+} */
+@media screen and (max-width: 650px) {
+  /* .gym__navbar{
+    padding: 0 50px;
+  } */
+  .gym__navbar {
+    padding: 0 50px;
+    justify-content: space-between;
+  }
+  .gym__navbar-btn > .register-btn {
+    display: none;
+  }
+  .togglemenu-content .register-btn {
+    display: block;
+  }
+}
+@media screen and (max-width: 400px) {
+  .gym__navbar-logo img {
+    width: 100%;
+  }
+  .gym__navbar-img{
+    width: 25px;
+    height: 25px;
+    padding: 6px;
+  }
+  .gym__navbar-logo h3 {
+    color: var(--heading-color);
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+}

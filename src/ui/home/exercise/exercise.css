@@ -1,0 +1,161 @@
+.gym__exercise {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 150px 150px 50px 150px;
+  text-align: center;
+}
+.gym__exercise h2 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+  color: var(--heading-color);
+}
+.gym__exercise p {
+  font-size: 1rem;
+  line-height: 28px;
+  color: var(--heading-color);
+  max-width: 600px;
+}
+.gym__exercise-content {
+  background: var(--bg-gradient);
+  display: flex;
+  border-radius: 8px;
+  padding: 80px 60px;
+  gap: 1.3rem;
+  margin-top: 2rem;
+}
+.gym__exercise-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  gap: 1rem;
+}
+.gym__exercise-box img {
+  width: 70%;
+}
+.gym__exercise-box span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+.exercise-icon {
+  background-color: #fff;
+  width: 40%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+.exercise-text {
+  text-align: left;
+}
+.exercise-text h5 {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 500;
+  /* margin-bottom: 0.6rem; */
+}
+
+.exercise-text p {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 24px;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 1050px) {
+  .gym__exercise-content {
+    flex-wrap: wrap;
+  }
+  .gym__exercise-box {
+    width: 100%;
+  }
+  .gym__exercise-box span {
+    width: 100%;
+    height: 100%;
+  }
+  .exercise-text {
+    flex: 2;
+  }
+  .exercise-icon {
+    flex: 0.9;
+    width: 100%;
+    height: 100%;
+  }
+  .gym__exercise-box img {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .gym__exercise {
+    padding: 150px 100px 50px 100px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .gym__exercise {
+    padding: 150px 50px 50px 50px;
+  }
+  .gym__exercise h2 {
+    font-size: 2rem;
+  }
+  .gym__exercise > p {
+    font-size: 0.9rem;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .gym__exercise h2 {
+    font-size: 1.8rem;
+  }
+  .gym__exercise p {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .gym__exercise-content {
+    padding: 60px 40px;
+  }
+  .gym__exercise-box {
+    flex-direction: column;
+  }
+  .exercise-icon {
+    width: 60%;
+    /* align-self: flex-start; */
+  }
+  .exercise-text {
+    display: flex;
+    text-align: center;
+    /* align-self: center; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .exercise-icon span {
+    padding: 25px 0;
+  }
+  .exercise-text h5 {
+    font-size: 1.2rem;
+  }
+  .exercise-text p {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .exercise-icon span {
+    padding: 25px 0;
+  }
+  .exercise-icon{
+    width: 80%;
+  }
+
+}
+@media screen and (max-width: 320px) {
+  .gym__exercise h2{
+    font-size: 1.6rem;
+  }
+}

@@ -1,0 +1,119 @@
+.gym__testimonials {
+  text-align: center;
+  margin: auto;
+  padding: 50px 150px 50px 150px;
+}
+.gym__testimonials > h2 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+.sliders {
+  max-width: 600px;
+  margin: auto;
+}
+.slide-item {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 5px;
+}
+
+.slide-img-01,
+.slide-img-02,
+.slide-img-03 {
+  width: 100%;
+  background-color: #eeeaff;
+  border-radius: 0.8rem;
+  margin-bottom: 30px;
+}
+.slide-img-02 {
+  background-color: #d3cef2;
+}
+.slide-item h4 {
+  text-align: left;
+  margin-bottom: 10px;
+  color: var(--heading-color);
+  font-weight: 600;
+}
+.slide-item h3 {
+  display: none;
+}
+.slide-item p {
+  text-align: left;
+  line-height: 28px;
+  color: var(--heading-color);
+}
+.slide-item h3 {
+  text-decoration: underline;
+  color: darkblue;
+  cursor: pointer;
+}
+.slide-item h3:active {
+  color: #d3cef2;
+}
+.slide-in-top {
+  -webkit-animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .gym__testimonials {
+    padding: 150px 100px 50px 100px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .gym__testimonials {
+    padding: 150px 50px 50px 50px;
+  }
+  .gym__testimonials > h2 {
+    font-size: 2rem;
+  }
+  .sliders {
+    max-width: 450px;
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .slide-item h3 {
+    display: block;
+  }
+  .slide-item > :nth-child(3) {
+    display: none;
+  }
+  .slide-item > :nth-child(4) {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+  .slide-item h4 {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .gym__testimonials > h2 {
+    font-size: 1.8rem;
+  }
+}
